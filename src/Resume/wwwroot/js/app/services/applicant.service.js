@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(['angular2/core', './../model/applicant'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,29 +10,34 @@ System.register(['angular2/core'], function(exports_1, context_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var AppComponent;
+    var core_1, applicant_1;
+    var ApplicantService;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (applicant_1_1) {
+                applicant_1 = applicant_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
-                    this.title = 'Tour of Heroes';
+            ApplicantService = (function () {
+                function ApplicantService() {
                 }
-                AppComponent = __decorate([
-                    core_1.Component({
-                        selector: 'my-app',
-                        template: '<div>Hello from angular</div>'
-                    }), 
+                ApplicantService.prototype.getApplicant = function () {
+                    var app = new applicant_1.Applicant();
+                    app.firstName = 'Daniel';
+                    app.surname = 'Cook';
+                    return app;
+                };
+                ApplicantService = __decorate([
+                    core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], ApplicantService);
+                return ApplicantService;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("ApplicantService", ApplicantService);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=applicant.service.js.map
