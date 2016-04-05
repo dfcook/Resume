@@ -21,6 +21,7 @@ namespace Resume
         public void Configure(IApplicationBuilder app)
         {
             app.UseIISPlatformHandler();
+            app.UseDefaultFiles();
             app.UseStaticFiles();
         }
 
