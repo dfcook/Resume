@@ -12,6 +12,6 @@ export class ProfessionalExperienceComponent implements OnInit {
     constructor(private _experienceService: ProfessionalExperienceService) { }
 
     ngOnInit() {
-        this.experience = this._experienceService.getProfessionalExperience();        
+        this.experience = this._experienceService.getProfessionalExperience().sort((a, b) => a.startDate > b.startDate ? -1 : a.startDate < b.startDate ? 1 : 0);        
     }
 }
