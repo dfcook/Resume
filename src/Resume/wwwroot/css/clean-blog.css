@@ -139,8 +139,7 @@ hr.small {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover;
-  margin-bottom: 50px;
+  -o-background-size: cover;  
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -210,23 +209,19 @@ hr.small {
     font-size: 30px;
   }
 }
-.post-preview > a {
+.post-preview {
   color: #404040;
 }
-.post-preview > a:hover,
-.post-preview > a:focus {
-  text-decoration: none;
-  color: #0085a1;
-}
-.post-preview > a > .post-title {
+.post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.post-preview > a > .post-subtitle {
+.post-subtitle {
   margin: 0;
-  font-weight: 300;
-  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 5px;  
 }
 .post-preview > .post-meta {
   color: #808080;
@@ -234,12 +229,12 @@ hr.small {
   font-style: italic;
   margin-top: 0;
 }
-.post-preview > .post-meta > a {
+.post-preview > .post-meta {
   text-decoration: none;
   color: #404040;
 }
-.post-preview > .post-meta > a:hover,
-.post-preview > .post-meta > a:focus {
+.post-preview > .post-meta:hover,
+.post-preview > .post-meta:focus {
   color: #0085a1;
   text-decoration: underline;
 }
