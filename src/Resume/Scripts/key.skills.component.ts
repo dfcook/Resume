@@ -5,7 +5,7 @@ import {IndustryKnowledgeService} from './services/industry.knowledge.service';
 import {IndustryKnowledge} from './model/industry.knowledge';
 
 @Component({
-    selector: 'personal-details',
+    selector: 'key-skills',
     templateUrl: 'templates/key.skills.html'
 })
 export class KeySkillsComponent implements OnInit {

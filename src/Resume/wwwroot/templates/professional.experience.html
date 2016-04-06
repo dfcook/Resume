@@ -1,0 +1,11 @@
+﻿<div class="post-preview">
+    <h2 class="post-title">
+        <em>Professional Experience</em>
+    </h2>
+    <div *ngFor="#exp of experience">
+        <div class="">Company: {{exp.company}}</div>
+        <div class="">{{exp.jobTitle}}</div>
+        <div class="">{{exp.description}}</div>
+        <hr />
+    </div>
+</div>

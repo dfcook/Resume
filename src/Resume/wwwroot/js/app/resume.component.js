@@ -1,4 +1,4 @@
-System.register(['angular2/core', './personal.details.component', './key.skills.component', './navigation.component', 'angular2/router', './services/applicant.service', './services/key.skills.service', './services/industry.knowledge.service'], function(exports_1, context_1) {
+System.register(['angular2/core', './personal.details.component', './key.skills.component', './navigation.component', './professional.experience.component', 'angular2/router', './services/applicant.service', './services/key.skills.service', './services/industry.knowledge.service', './services/professional.experience.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, personal_details_component_1, key_skills_component_1, navigation_component_1, router_1, applicant_service_1, key_skills_service_1, industry_knowledge_service_1;
+    var core_1, personal_details_component_1, key_skills_component_1, navigation_component_1, professional_experience_component_1, router_1, applicant_service_1, key_skills_service_1, industry_knowledge_service_1, professional_experience_service_1;
     var ResumeComponent;
     return {
         setters:[
@@ -26,6 +26,9 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
             function (navigation_component_1_1) {
                 navigation_component_1 = navigation_component_1_1;
             },
+            function (professional_experience_component_1_1) {
+                professional_experience_component_1 = professional_experience_component_1_1;
+            },
             function (router_1_1) {
                 router_1 = router_1_1;
             },
@@ -37,6 +40,9 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
             },
             function (industry_knowledge_service_1_1) {
                 industry_knowledge_service_1 = industry_knowledge_service_1_1;
+            },
+            function (professional_experience_service_1_1) {
+                professional_experience_service_1 = professional_experience_service_1_1;
             }],
         execute: function() {
             ResumeComponent = (function () {
@@ -53,7 +59,8 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
                             router_1.ROUTER_PROVIDERS,
                             applicant_service_1.ApplicantService,
                             key_skills_service_1.KeySkillsService,
-                            industry_knowledge_service_1.IndustryKnowledgeService
+                            industry_knowledge_service_1.IndustryKnowledgeService,
+                            professional_experience_service_1.ProfessionalExperienceService
                         ]
                     }),
                     router_1.RouteConfig([
@@ -69,6 +76,13 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
                             path: '/key_skills',
                             name: 'Key Skills',
                             component: key_skills_component_1.KeySkillsComponent
+                        }
+                    ]),
+                    router_1.RouteConfig([
+                        {
+                            path: '/professional_experience',
+                            name: 'Professional Experience',
+                            component: professional_experience_component_1.ProfessionalExperienceComponent
                         }
                     ]), 
                     __metadata('design:paramtypes', [])

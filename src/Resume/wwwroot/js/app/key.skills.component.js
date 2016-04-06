@@ -35,7 +35,7 @@ System.register(['angular2/core', './services/key.skills.service', './services/i
                 };
                 KeySkillsComponent = __decorate([
                     core_1.Component({
-                        selector: 'personal-details',
+                        selector: 'key-skills',
                         templateUrl: 'templates/key.skills.html'
                     }), 
                     __metadata('design:paramtypes', [key_skills_service_1.KeySkillsService, industry_knowledge_service_1.IndustryKnowledgeService])

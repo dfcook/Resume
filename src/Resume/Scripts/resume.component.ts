@@ -2,10 +2,12 @@
 import {PersonalDetailsComponent} from './personal.details.component';
 import {KeySkillsComponent} from './key.skills.component';
 import {NavigationComponent} from './navigation.component';
+import {ProfessionalExperienceComponent} from './professional.experience.component';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 import {ApplicantService} from './services/applicant.service';
 import {KeySkillsService} from './services/key.skills.service';
 import {IndustryKnowledgeService} from './services/industry.knowledge.service';
+import {ProfessionalExperienceService} from './services/professional.experience.service';
 
 @Component({
     selector: 'resume',
@@ -16,7 +18,8 @@ import {IndustryKnowledgeService} from './services/industry.knowledge.service';
         ROUTER_PROVIDERS,
         ApplicantService,
         KeySkillsService,
-        IndustryKnowledgeService                       
+        IndustryKnowledgeService,
+        ProfessionalExperienceService                       
     ]    
 })
 @RouteConfig([
@@ -32,6 +35,13 @@ import {IndustryKnowledgeService} from './services/industry.knowledge.service';
         path: '/key_skills',
         name: 'Key Skills',
         component: KeySkillsComponent        
+    }
+])
+@RouteConfig([
+    {
+        path: '/professional_experience',
+        name: 'Professional Experience',
+        component: ProfessionalExperienceComponent
     }
 ])
 export class ResumeComponent {
