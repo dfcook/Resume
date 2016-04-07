@@ -2,25 +2,25 @@
     <h2 class="post-title">
         <em>Key Skills &amp; Knowledge</em>
     </h2>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h4 class="post-title">
+                <h4 class="post-subtitle">
                     <em>Skills</em>
                 </h4>
                 <ul>
-                    <li class="post-subtitle" *ngFor="#skill of keySkills">{{skill.skill}} ({{skill.yearsExperience}} years)</li>
+                    <li *ngFor="#skill of keySkills">{{skill.skill}} ({{skill.yearsExperience}} years)</li>
                 </ul>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-12">
-                <h4 class="post-title">
+                <h4 class="post-subtitle">
                     <em>Industry Knowledge</em>
                 </h4>
                 <ul>
-                    <li class="post-subtitle" *ngFor="#kn of knowledge">{{kn.industry}} ({{kn.yearsExperience}} years)</li>
+                    <li *ngFor="#kn of knowledge">{{kn.industry}} ({{kn.yearsExperience}} years)</li>
                 </ul>
             </div>
         </div>

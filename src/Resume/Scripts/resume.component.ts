@@ -2,12 +2,14 @@
 import {PersonalDetailsComponent} from './personal.details.component';
 import {KeySkillsComponent} from './key.skills.component';
 import {NavigationComponent} from './navigation.component';
+import {EducationComponent} from './education.component';
 import {ProfessionalExperienceComponent} from './professional.experience.component';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 import {ApplicantService} from './services/applicant.service';
 import {KeySkillsService} from './services/key.skills.service';
 import {IndustryKnowledgeService} from './services/industry.knowledge.service';
 import {ProfessionalExperienceService} from './services/professional.experience.service';
+import {EducationService} from './services/education.service';
 
 @Component({
     selector: 'resume',
@@ -18,6 +20,7 @@ import {ProfessionalExperienceService} from './services/professional.experience.
         ROUTER_PROVIDERS,
         ApplicantService,
         KeySkillsService,
+        EducationService,
         IndustryKnowledgeService,
         ProfessionalExperienceService                       
     ]    
@@ -44,6 +47,12 @@ import {ProfessionalExperienceService} from './services/professional.experience.
         component: ProfessionalExperienceComponent
     }
 ])
-export class ResumeComponent {
-    public title: string = 'Tour of Heroes';
+@RouteConfig([
+    {
+        path: '/education',
+        name: 'Education',
+        component: EducationComponent
+    }
+])
+export class ResumeComponent {    
 }

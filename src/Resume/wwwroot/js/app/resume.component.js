@@ -1,4 +1,4 @@
-System.register(['angular2/core', './personal.details.component', './key.skills.component', './navigation.component', './professional.experience.component', 'angular2/router', './services/applicant.service', './services/key.skills.service', './services/industry.knowledge.service', './services/professional.experience.service'], function(exports_1, context_1) {
+System.register(['angular2/core', './personal.details.component', './key.skills.component', './navigation.component', './education.component', './professional.experience.component', 'angular2/router', './services/applicant.service', './services/key.skills.service', './services/industry.knowledge.service', './services/professional.experience.service', './services/education.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, personal_details_component_1, key_skills_component_1, navigation_component_1, professional_experience_component_1, router_1, applicant_service_1, key_skills_service_1, industry_knowledge_service_1, professional_experience_service_1;
+    var core_1, personal_details_component_1, key_skills_component_1, navigation_component_1, education_component_1, professional_experience_component_1, router_1, applicant_service_1, key_skills_service_1, industry_knowledge_service_1, professional_experience_service_1, education_service_1;
     var ResumeComponent;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
             },
             function (navigation_component_1_1) {
                 navigation_component_1 = navigation_component_1_1;
+            },
+            function (education_component_1_1) {
+                education_component_1 = education_component_1_1;
             },
             function (professional_experience_component_1_1) {
                 professional_experience_component_1 = professional_experience_component_1_1;
@@ -43,11 +46,13 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
             },
             function (professional_experience_service_1_1) {
                 professional_experience_service_1 = professional_experience_service_1_1;
+            },
+            function (education_service_1_1) {
+                education_service_1 = education_service_1_1;
             }],
         execute: function() {
             ResumeComponent = (function () {
                 function ResumeComponent() {
-                    this.title = 'Tour of Heroes';
                 }
                 ResumeComponent = __decorate([
                     core_1.Component({
@@ -59,6 +64,7 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
                             router_1.ROUTER_PROVIDERS,
                             applicant_service_1.ApplicantService,
                             key_skills_service_1.KeySkillsService,
+                            education_service_1.EducationService,
                             industry_knowledge_service_1.IndustryKnowledgeService,
                             professional_experience_service_1.ProfessionalExperienceService
                         ]
@@ -84,6 +90,13 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
                             name: 'Professional Experience',
                             component: professional_experience_component_1.ProfessionalExperienceComponent
                         }
+                    ]),
+                    router_1.RouteConfig([
+                        {
+                            path: '/education',
+                            name: 'Education',
+                            component: education_component_1.EducationComponent
+                        }
                     ]), 
                     __metadata('design:paramtypes', [])
                 ], ResumeComponent);
@@ -93,4 +106,4 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
         }
     }
 });
-//# sourceMappingURL=resume.component.js.map
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVzdW1lLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL1NjcmlwdHMvcmVzdW1lLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztZQXdEQTtnQkFBQTtnQkFDQSxDQUFDO2dCQTVDRDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFFBQVEsRUFBRSxRQUFRO3dCQUNsQixXQUFXLEVBQUUsdUJBQXVCO3dCQUNwQyxVQUFVLEVBQUUsQ0FBQywwQkFBaUI7NEJBQzFCLDBDQUFtQixDQUFDO3dCQUN4QixTQUFTLEVBQUU7NEJBQ1AseUJBQWdCOzRCQUNoQixvQ0FBZ0I7NEJBQ2hCLHFDQUFnQjs0QkFDaEIsb0NBQWdCOzRCQUNoQixxREFBd0I7NEJBQ3hCLCtEQUE2Qjt5QkFDaEM7cUJBQ0osQ0FBQztvQkFDRCxvQkFBVyxDQUFDO3dCQUNUOzRCQUNJLElBQUksRUFBRSxtQkFBbUI7NEJBQ3pCLElBQUksRUFBRSxrQkFBa0I7NEJBQ3hCLFNBQVMsRUFBRSxxREFBd0I7NEJBQ25DLFlBQVksRUFBRSxJQUFJO3lCQUNyQjtxQkFDSixDQUFDO29CQUNELG9CQUFXLENBQUM7d0JBQ1Q7NEJBQ0ksSUFBSSxFQUFFLGFBQWE7NEJBQ25CLElBQUksRUFBRSxZQUFZOzRCQUNsQixTQUFTLEVBQUUseUNBQWtCO3lCQUNoQztxQkFDSixDQUFDO29CQUNELG9CQUFXLENBQUM7d0JBQ1Q7NEJBQ0ksSUFBSSxFQUFFLDBCQUEwQjs0QkFDaEMsSUFBSSxFQUFFLHlCQUF5Qjs0QkFDL0IsU0FBUyxFQUFFLG1FQUErQjt5QkFDN0M7cUJBQ0osQ0FBQztvQkFDRCxvQkFBVyxDQUFDO3dCQUNUOzRCQUNJLElBQUksRUFBRSxZQUFZOzRCQUNsQixJQUFJLEVBQUUsV0FBVzs0QkFDakIsU0FBUyxFQUFFLHdDQUFrQjt5QkFDaEM7cUJBQ0osQ0FBQzs7bUNBQUE7Z0JBRUYsc0JBQUM7WUFBRCxDQUFDLEFBREQsSUFDQztZQURELDZDQUNDLENBQUEifQ==
