@@ -3,11 +3,13 @@
 import {Component, ElementRef, Inject, OnInit, AfterViewInit} from 'angular2/core';
 import {ProfessionalExperienceService} from './services/professional.experience.service';
 import {ProfessionalExperience} from './model/professional.experience';
+import {IsNullPipe} from './pipes/isnull-pipe';
 
 @Component({
     styleUrls: [ 'css/timeline.css' ],
     selector: 'professional-experience',
-    templateUrl: 'templates/professional.experience.html'
+    templateUrl: 'templates/professional.experience.html',
+    pipes: [IsNullPipe]
 })
 export class ProfessionalExperienceComponent implements OnInit, AfterViewInit {    
     public experience: ProfessionalExperience[];
@@ -21,7 +23,7 @@ export class ProfessionalExperienceComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         let timelineBlocks = $('.cd-timeline-block'),
-            offset = 0.5;
+            offset = 0.8;
 
         //hide timeline blocks which are outside the viewport
         hideBlocks(timelineBlocks, offset);
@@ -48,10 +50,9 @@ export class ProfessionalExperienceComponent implements OnInit, AfterViewInit {
             blocks.each(function () {
                 let block = $(this);
 
-                if (block.offset().top > ($(window).scrollTop() + $(window).height() * offset) &&
-                    block.find('.cd-timeline-img').hasClass('is-hidden')) {
-                    let content = block.find('.cd-timeline-img, .cd-timeline-content');
-                    content.removeClass('is-hidden').addClass('bounce-in')
+                if (block.offset().top <= $(window).scrollTop() + $(window).height() * offset &&
+                    block.find('.cd-timeline-img').hasClass('is-hidden')) {                    
+                    block.find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in')
                 }
             });            
         }
