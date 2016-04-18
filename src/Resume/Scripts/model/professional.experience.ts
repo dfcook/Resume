@@ -3,6 +3,6 @@
     startDate: Date;
     endDate?: Date;
     jobTitle: string;
-    skills: string[];
+    skills: string;
     description: string;    
 }

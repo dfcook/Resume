@@ -11,8 +11,9 @@
     "outDir": "./wwwroot/js/app/",
     "removeComments": false,
     "rootDir": "./Scripts",
-    "sourceMap": true,
+    "inlineSourceMap": true,
+    "sourceMap": false,
     "target": "es5"
   },
-  "exclude": ["node_modules", "wwwroot"]
+  "exclude": ["node_modules", "wwwroot", "typings"]
 }

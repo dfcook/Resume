@@ -16,4 +16,4 @@ System.register(['angular2/platform/browser', './resume.component'], function(ex
         }
     }
 });
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL1NjcmlwdHMvbWFpbi50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQyxxRUFBcUU7Ozs7Ozs7Ozs7Ozs7O1lBS3RFLG1CQUFTLENBQUMsa0NBQWUsQ0FBQyxDQUFDIn0=
