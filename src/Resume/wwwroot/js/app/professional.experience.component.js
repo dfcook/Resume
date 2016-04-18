@@ -26,7 +26,7 @@ System.register(['angular2/core', './services/professional.experience.service'],
                     this._experienceService = _experienceService;
                 }
                 ProfessionalExperienceComponent.prototype.ngOnInit = function () {
-                    this.experience = this._experienceService.getProfessionalExperience().sort(function (a, b) { return a.startDate > b.startDate ? -1 : a.startDate < b.startDate ? 1 : 0; });
+                    this.experience = this._experienceService.getProfessionalExperience();
                 };
                 ProfessionalExperienceComponent = __decorate([
                     core_1.Component({

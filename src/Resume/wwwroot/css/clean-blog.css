@@ -21,6 +21,7 @@ h2,
 h3,
 h4,
 h5,
+li,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
@@ -331,13 +332,6 @@ form .row:first-child .floating-label-form-group {
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
-}
-.description {
-    white-space: pre-wrap;       /* CSS 3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 .btn-lg {
   font-size: 16px;

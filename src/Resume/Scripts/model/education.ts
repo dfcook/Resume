@@ -1,4 +1,6 @@
 ﻿export interface Education {
-    establishment: string;    
+    startDate: Date;
+    endDate?: Date;
+    description: string;    
     qualification: string;
 }

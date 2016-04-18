@@ -3,11 +3,9 @@
         <em>Professional Experience</em>
     </h2>
     <div *ngFor="#exp of experience">
-        <div>Company: {{exp.company}}</div>
-        <div>{{exp.startDate | date:"MMM/yyyy"}} - {{exp.endDate | date:"MMM/yyyy"}} : {{exp.jobTitle}}</div>
-        <div>Skills: {{exp.skills}}</div>
-        <br/>
-        <div class="description">{{exp.description}}</div>
+        <div class="">Company: {{exp.company}}</div>
+        <div class="">{{exp.jobTitle}}</div>
+        <div class="">{{exp.description}}</div>
         <hr />
     </div>
 </div>
