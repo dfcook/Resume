@@ -1,7 +1,7 @@
 ﻿<h2 class="post-title">
     <em>Professional Experience</em>
 </h2>
-<section id="cd-timeline" class="cd-container">
+<section id="cd-timeline" class="cd-container" (window:scroll)="onScroll($event)">
     <div *ngFor="#exp of experience" class="cd-timeline-block">
         <div class="cd-timeline-img">
             <span class="fa-stack fa-lg">
