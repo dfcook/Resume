@@ -26,7 +26,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         firstName: 'Daniel',
                         surname: 'Cook',
                         dateOfBirth: new Date(1975, 6, 15),
-                        description: 'A senior developer with 18 years experience including 15 years (from 1.0 beta) in .NET development for both the desktop and the Web. Current position is as a contractor for Credit Suisse investment bank developing rich client applications in Silverlight and Windows alongside web solutions using HTML5, CSS and Angular.js. Experienced in object-oriented and functional design and patterns. Strong SQL skills including query performance analysis.'
+                        description: 'A senior developer with 18 years in the industry including 15 years ' +
+                            ' .NET development for both the desktop and the Web.' +
+                            ' Produces high quality results with blistering speed, working from simple requirements to a polished end product.' +
+                            ' Experience and self-motivated approach to learning can be applied to both development and consultancy.'
                     };
                 };
                 ApplicantService = __decorate([
@@ -39,4 +42,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwbGljYW50LnNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9TY3JpcHRzL3NlcnZpY2VzL2FwcGxpY2FudC5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1lBSUE7Z0JBQUE7Z0JBU0EsQ0FBQztnQkFSRyx1Q0FBWSxHQUFaO29CQUNJLE1BQU0sQ0FBQzt3QkFDSCxTQUFTLEVBQUUsUUFBUTt3QkFDbkIsT0FBTyxFQUFFLE1BQU07d0JBQ2YsV0FBVyxFQUFFLElBQUksSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUFDO3dCQUNsQyxXQUFXLEVBQUUsK2JBQStiO3FCQUMvYyxDQUFDO2dCQUNOLENBQUM7Z0JBVEw7b0JBQUMsaUJBQVUsRUFBRTs7b0NBQUE7Z0JBVWIsdUJBQUM7WUFBRCxDQUFDLEFBVEQsSUFTQztZQVRELCtDQVNDLENBQUEifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwbGljYW50LnNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9TY3JpcHRzL3NlcnZpY2VzL2FwcGxpY2FudC5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1lBSUE7Z0JBQUE7Z0JBWUEsQ0FBQztnQkFYRyx1Q0FBWSxHQUFaO29CQUNJLE1BQU0sQ0FBQzt3QkFDSCxTQUFTLEVBQUUsUUFBUTt3QkFDbkIsT0FBTyxFQUFFLE1BQU07d0JBQ2YsV0FBVyxFQUFFLElBQUksSUFBSSxDQUFDLElBQUksRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUFDO3dCQUNsQyxXQUFXLEVBQUUsc0VBQXNFOzRCQUNuRixxREFBcUQ7NEJBQ3JELG1IQUFtSDs0QkFDbkgseUdBQXlHO3FCQUM1RyxDQUFDO2dCQUNOLENBQUM7Z0JBWkw7b0JBQUMsaUJBQVUsRUFBRTs7b0NBQUE7Z0JBYWIsdUJBQUM7WUFBRCxDQUFDLEFBWkQsSUFZQztZQVpELCtDQVlDLENBQUEifQ==

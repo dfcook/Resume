@@ -13,11 +13,15 @@ gulp.task('moveToLibs', function (done) {
       'node_modules/systemjs/dist/*.*',
       'node_modules/jquery/dist/jquery.*js',
       'node_modules/bootstrap/dist/js/bootstrap*.js',
-      'node_modules/rxjs/bundles/Rx.js'
+      'node_modules/rxjs/bundles/Rx.js',
+      'node_modules/jasmine-core/lib/jasmine-core/jasmine.js',
+      'node_modules/jasmine-core/lib/jasmine-core/boot.js',
+      'node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js',      
     ]).pipe(gulp.dest('./wwwroot/libs/'));
 
     gulp.src([
-      'node_modules/bootstrap/dist/css/bootstrap.*css'
+      'node_modules/bootstrap/dist/css/bootstrap.*css',
+      'node_modules/jasmine-core/lib/jasmine-core/jasmine.css'
     ]).pipe(gulp.dest('./wwwroot/libs/css'));
 
     gulp.src([

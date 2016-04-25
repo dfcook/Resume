@@ -11,6 +11,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "http://localhost:54356/tests/unit-tests.html",
       "environmentVariables": {
         "Hosting:Environment": "Development"
       }
