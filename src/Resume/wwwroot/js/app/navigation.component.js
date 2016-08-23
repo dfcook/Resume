@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/router'], function(exports_1, context_1) {
+System.register(["angular2/core", "angular2/router"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -26,9 +26,9 @@ System.register(['angular2/core', 'angular2/router'], function(exports_1, contex
                 }
                 NavigationComponent = __decorate([
                     core_1.Component({
-                        selector: 'navigation',
+                        selector: "navigation",
                         directives: [router_1.ROUTER_DIRECTIVES],
-                        templateUrl: 'templates/navigation.html'
+                        templateUrl: "templates/navigation.html"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], NavigationComponent);

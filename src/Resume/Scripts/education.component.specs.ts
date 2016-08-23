@@ -1,9 +1,9 @@
 ﻿/// <reference path="./../typings/browser.d.ts" />
 
-import { EducationComponent } from './education.component';
-import { EducationService } from './services/education.service';
+import { EducationComponent } from "./education.component";
+import { EducationService } from "./services/education.service";
 
-describe('EducationComponent', () => {
+describe("EducationComponent", () => {
     let component: EducationComponent;
     let service: EducationService;
 
@@ -14,11 +14,11 @@ describe('EducationComponent', () => {
         component.ngOnInit();
     });
 
-    it('has educations property', () => {
-        expect(component.educations).not.toBeNull();        
-    });    
+    it("has educations property", () => {
+        expect(component.educations).not.toBeNull();
+    });
 
-    it('contains > 0 educations', () => {
+    it("contains > 0 educations", () => {
         expect(component.educations.length).toBeGreaterThan(0);
     });
 });

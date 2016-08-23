@@ -1,6 +1,6 @@
-﻿export interface Role {
+﻿export interface IRole {
     startDate: Date;
     endDate?: Date;
-    description: string;    
+    description: string;
     skills: string[];
 }

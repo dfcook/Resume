@@ -1,15 +1,15 @@
-﻿import {Component, Inject, OnInit} from 'angular2/core';
-import {KeySkillsService} from './services/key.skills.service';
-import {KeySkill} from './model/key.skill';
-import {IndustryKnowledgeService} from './services/industry.knowledge.service';
-import {IndustryKnowledge} from './model/industry.knowledge';
+﻿import {Component, Inject, OnInit} from "angular2/core";
+import {KeySkillsService} from "./services/key.skills.service";
+import {IKeySkill} from "./model/key.skill";
+import {IndustryKnowledgeService} from "./services/industry.knowledge.service";
+import {IndustryKnowledge} from "./model/industry.knowledge";
 
 @Component({
-    selector: 'key-skills',
-    templateUrl: 'templates/key.skills.html'
+    selector: "key-skills",
+    templateUrl: "templates/key.skills.html"
 })
 export class KeySkillsComponent implements OnInit {
-    public keySkills: KeySkill[];
+    public keySkills: IKeySkill[];
     public knowledge: IndustryKnowledge[];
 
     constructor(private _keySkillsService: KeySkillsService,

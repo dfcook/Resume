@@ -1,15 +1,15 @@
-﻿import {Injectable} from 'angular2/core';
-import {Role} from './../model/role';
+﻿import {Injectable} from "angular2/core";
+import {IRole} from "./../model/role";
 
 @Injectable()
 export class RoleService {
-    getRoles(): Role[] {
+    getRoles(): IRole[] {
         return [{
             startDate: new Date(),
             endDate: new Date(),
-            skills: [''
+            skills: [""
                 ],
-            description: ''
-        }];        
+            description: ""
+        }];
     }
 }

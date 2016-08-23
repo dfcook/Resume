@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(["angular2/core"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -23,11 +23,11 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 EducationService.prototype.getEducations = function () {
                     return [{
-                            qualification: 'Degree (2:1) in English Literature / Philosophy ',
-                            establishment: 'Keele University'
+                            qualification: "Degree (2:1) in English Literature / Philosophy ",
+                            establishment: "Keele University"
                         }, {
-                            qualification: '4 A-Levels and 9 GCSE’s',
-                            establishment: 'Kirkham Grammar School'
+                            qualification: "4 A-Levels and 9 GCSE’s",
+                            establishment: "Kirkham Grammar School"
                         }];
                 };
                 EducationService = __decorate([

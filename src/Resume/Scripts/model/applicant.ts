@@ -1,6 +1,6 @@
-﻿export interface Applicant {
+﻿export interface IApplicant {
     firstName: string;
     surname: string;
-    dateOfBirth: Date;    
+    dateOfBirth: Date;
     description: string;
 }

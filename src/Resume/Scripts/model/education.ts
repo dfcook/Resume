@@ -1,4 +1,4 @@
-﻿export interface Education {    
-    establishment: string;    
+﻿export interface IEducation {
+    establishment: string;
     qualification: string;
 }
