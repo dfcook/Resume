@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(["angular2/core"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -23,16 +23,17 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 IndustryKnowledgeService.prototype.getIndustryKnowledge = function () {
                     return [{
-                            industry: 'Investment Banking – Convertible Bond pricing, trading and research systems. Trading FOBO, reconciliation and exception workflow management.',
+                            industry: "Investment Banking – Convertible Bond pricing, trading and research systems. " +
+                                "Trading FOBO, reconciliation and exception workflow management.",
                             yearsExperience: 12
                         }, {
-                            industry: 'Retail',
+                            industry: "Retail",
                             yearsExperience: 0.5
                         }, {
-                            industry: 'Mail',
+                            industry: "Mail",
                             yearsExperience: 0.5
                         }, {
-                            industry: 'Insurance',
+                            industry: "Insurance",
                             yearsExperience: 2
                         }];
                 };
@@ -46,4 +47,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kdXN0cnkua25vd2xlZGdlLnNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9TY3JpcHRzL3NlcnZpY2VzL2luZHVzdHJ5Lmtub3dsZWRnZS5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1lBSUE7Z0JBQUE7Z0JBZ0JBLENBQUM7Z0JBZkcsdURBQW9CLEdBQXBCO29CQUNJLE1BQU0sQ0FBQyxDQUFDOzRCQUNKLFFBQVEsRUFBRSw4SUFBOEk7NEJBQ3BKLGVBQWUsRUFBRSxFQUFFO3lCQUN0QixFQUFFOzRCQUNDLFFBQVEsRUFBRSxRQUFROzRCQUNsQixlQUFlLEVBQUUsR0FBRzt5QkFDdkIsRUFBRTs0QkFDQyxRQUFRLEVBQUUsTUFBTTs0QkFDaEIsZUFBZSxFQUFFLEdBQUc7eUJBQ3ZCLEVBQUU7NEJBQ0MsUUFBUSxFQUFFLFdBQVc7NEJBQ3JCLGVBQWUsRUFBRSxDQUFDO3lCQUNyQixDQUFDLENBQUM7Z0JBQ1gsQ0FBQztnQkFoQkw7b0JBQUMsaUJBQVUsRUFBRTs7NENBQUE7Z0JBaUJiLCtCQUFDO1lBQUQsQ0FBQyxBQWhCRCxJQWdCQztZQWhCRCwrREFnQkMsQ0FBQSJ9
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kdXN0cnkua25vd2xlZGdlLnNlcnZpY2UuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9TY3JpcHRzL3NlcnZpY2VzL2luZHVzdHJ5Lmtub3dsZWRnZS5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1lBSUE7Z0JBQUE7Z0JBaUJBLENBQUM7Z0JBaEJHLHVEQUFvQixHQUFwQjtvQkFDSSxNQUFNLENBQUMsQ0FBQzs0QkFDSixRQUFRLEVBQUUsK0VBQStFO2dDQUNyRixpRUFBaUU7NEJBQ2pFLGVBQWUsRUFBRSxFQUFFO3lCQUN0QixFQUFFOzRCQUNDLFFBQVEsRUFBRSxRQUFROzRCQUNsQixlQUFlLEVBQUUsR0FBRzt5QkFDdkIsRUFBRTs0QkFDQyxRQUFRLEVBQUUsTUFBTTs0QkFDaEIsZUFBZSxFQUFFLEdBQUc7eUJBQ3ZCLEVBQUU7NEJBQ0MsUUFBUSxFQUFFLFdBQVc7NEJBQ3JCLGVBQWUsRUFBRSxDQUFDO3lCQUNyQixDQUFDLENBQUM7Z0JBQ1gsQ0FBQztnQkFqQkw7b0JBQUMsaUJBQVUsRUFBRTs7NENBQUE7Z0JBa0JiLCtCQUFDO1lBQUQsQ0FBQyxBQWpCRCxJQWlCQztZQWpCRCwrREFpQkMsQ0FBQSJ9

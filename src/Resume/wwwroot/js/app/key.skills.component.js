@@ -1,4 +1,4 @@
-System.register(['angular2/core', './services/key.skills.service', './services/industry.knowledge.service'], function(exports_1, context_1) {
+System.register(["angular2/core", "./services/key.skills.service", "./services/industry.knowledge.service"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -35,8 +35,8 @@ System.register(['angular2/core', './services/key.skills.service', './services/i
                 };
                 KeySkillsComponent = __decorate([
                     core_1.Component({
-                        selector: 'key-skills',
-                        templateUrl: 'templates/key.skills.html'
+                        selector: "key-skills",
+                        templateUrl: "templates/key.skills.html"
                     }), 
                     __metadata('design:paramtypes', [key_skills_service_1.KeySkillsService, industry_knowledge_service_1.IndustryKnowledgeService])
                 ], KeySkillsComponent);

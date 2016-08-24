@@ -1,4 +1,4 @@
-System.register(['angular2/core', './services/education.service'], function(exports_1, context_1) {
+System.register(["angular2/core", "./services/education.service"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -30,8 +30,8 @@ System.register(['angular2/core', './services/education.service'], function(expo
                 };
                 EducationComponent = __decorate([
                     core_1.Component({
-                        selector: 'education',
-                        templateUrl: 'templates/education.html'
+                        selector: "education",
+                        templateUrl: "templates/education.html"
                     }), 
                     __metadata('design:paramtypes', [education_service_1.EducationService])
                 ], EducationComponent);

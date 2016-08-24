@@ -1,4 +1,4 @@
-System.register(['angular2/core', './personal.details.component', './key.skills.component', './navigation.component', './education.component', './professional.experience.component', 'angular2/router', './services/applicant.service', './services/key.skills.service', './services/industry.knowledge.service', './services/professional.experience.service', './services/education.service'], function(exports_1, context_1) {
+System.register(["angular2/core", "./personal.details.component", "./key.skills.component", "./navigation.component", "./education.component", "./professional.experience.component", "angular2/router", "./services/applicant.service", "./services/key.skills.service", "./services/industry.knowledge.service", "./services/professional.experience.service", "./services/education.service"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -56,8 +56,8 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
                 }
                 ResumeComponent = __decorate([
                     core_1.Component({
-                        selector: 'resume',
-                        templateUrl: 'templates/resume.html',
+                        selector: "resume",
+                        templateUrl: "templates/resume.html",
                         directives: [router_1.ROUTER_DIRECTIVES,
                             navigation_component_1.NavigationComponent],
                         providers: [
@@ -71,30 +71,30 @@ System.register(['angular2/core', './personal.details.component', './key.skills.
                     }),
                     router_1.RouteConfig([
                         {
-                            path: '/personal_details',
-                            name: 'Personal Details',
+                            path: "/personal_details",
+                            name: "Personal Details",
                             component: personal_details_component_1.PersonalDetailsComponent,
                             useAsDefault: true
                         }
                     ]),
                     router_1.RouteConfig([
                         {
-                            path: '/key_skills',
-                            name: 'Key Skills',
+                            path: "/key_skills",
+                            name: "Key Skills",
                             component: key_skills_component_1.KeySkillsComponent
                         }
                     ]),
                     router_1.RouteConfig([
                         {
-                            path: '/professional_experience',
-                            name: 'Professional Experience',
+                            path: "/professional_experience",
+                            name: "Professional Experience",
                             component: professional_experience_component_1.ProfessionalExperienceComponent
                         }
                     ]),
                     router_1.RouteConfig([
                         {
-                            path: '/education',
-                            name: 'Education',
+                            path: "/education",
+                            name: "Education",
                             component: education_component_1.EducationComponent
                         }
                     ]), 

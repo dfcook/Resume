@@ -1,8 +1,8 @@
 ﻿using System.IO;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Hosting;
-using Microsoft.AspNet.Routing.Template;
-using Microsoft.AspNet.StaticFiles;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing.Template;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Resume
@@ -21,24 +21,20 @@ namespace Resume
         {
             app.Use(async (context, next) =>
             {
-                await next();
+                await next?.Invoke();
 
                 // If there's no available file and the request doesn't contain an extension, we're probably trying to access a page.
                 // Rewrite request to use app root
-                if (context.Response.StatusCode == 404 && 
+                if (context.Response.StatusCode == 404 &&
                     !Path.HasExtension(context.Request.Path.Value))
                 {
-                    context.Request.Path = "/index.html"; // Put your Angular root page here 
-                    await next();
+                    context.Request.Path = "/index.html"; // Put your Angular root page here
+                    await next?.Invoke();
                 }
             });
 
-            app.UseIISPlatformHandler();
             app.UseDefaultFiles();
-            app.UseStaticFiles();                                        
+            app.UseStaticFiles();
         }
-
-        // Entry point for the application.
-        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }

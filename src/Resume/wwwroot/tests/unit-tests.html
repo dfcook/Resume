@@ -29,13 +29,25 @@
             }
         });
 
-        Promise.all([
-            System.import('../js/app/model/applicant.specs'),
-            System.import('../js/app/pipes/isnull-pipe.specs'),
-            System.import('../js/app/services/applicant.service.specs')
-        ]).
-            then(window.onload).
-            catch(console.error.bind(console));
+        var currentWindowOnload = window.onload;
+
+        window.onload = function () {
+            Promise.all([
+                System.import('../js/app/model/applicant.specs'),
+                System.import('../js/app/pipes/isnull-pipe.specs'),
+                System.import('../js/app/services/applicant.service.specs'),
+                System.import('../js/app/services/education.service.specs'),
+                System.import('../js/app/education.component.specs')
+            ]).
+            then(function() {
+                if (currentWindowOnload) {
+                    currentWindowOnload();
+                }
+            }).
+            catch(console.error.bind(console));                      
+        };
+
+        
     </script>
 </body>
 </html>

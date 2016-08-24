@@ -1,4 +1,4 @@
-System.register(['angular2/core'], function(exports_1, context_1) {
+System.register(["angular2/core"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -23,28 +23,28 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 KeySkillsService.prototype.getKeySkills = function () {
                     return [{
-                            skill: 'C#, VB.NET, .NET Framework',
+                            skill: "C#, VB.NET, .NET Framework",
                             yearsExperience: 15
                         }, {
-                            skill: 'OO Analysis and Design',
+                            skill: "OO Analysis and Design",
                             yearsExperience: 10
                         }, {
-                            skill: 'ASP.NET MVC & WebApi',
+                            skill: "ASP.NET MVC & WebApi",
                             yearsExperience: 3
                         }, {
-                            skill: 'Javascript, TypeScript, AngularJS',
+                            skill: "Javascript, TypeScript, AngularJS",
                             yearsExperience: 2
                         }, {
-                            skill: 'Silverlight (MVVM, Prism)',
+                            skill: "Silverlight (MVVM, Prism)",
                             yearsExperience: 3
                         }, {
-                            skill: 'WCF/Remoting',
+                            skill: "WCF/Remoting",
                             yearsExperience: 5
                         }, {
-                            skill: 'HTML5, CSS',
+                            skill: "HTML5, CSS",
                             yearsExperience: 3
                         }, {
-                            skill: 'SQL Server -  Stored Procedures, Views, Triggers, Performance tuning',
+                            skill: "SQL Server -  Stored Procedures, Views, Triggers, Performance tuning",
                             yearsExperience: 10
                         }];
                 };

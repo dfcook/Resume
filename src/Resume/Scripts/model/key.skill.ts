@@ -1,4 +1,4 @@
-﻿export interface KeySkill {
+﻿export interface IKeySkill {
     skill: string;
     yearsExperience: number;
 }
