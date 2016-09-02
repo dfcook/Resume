@@ -1,4 +1,4 @@
-﻿/// <binding AfterBuild='moveToLibs' />
+﻿/// <binding AfterBuild='moveToOut' />
 var gulp = require('gulp'),
     rimraf = require("rimraf"),
     concat = require("gulp-concat"),
@@ -42,7 +42,7 @@ gulp.task("min:css", function () {
 
 gulp.task("min", ["min:js", "min:css"]);
 
-gulp.task('moveToLibs', function (done) {
+gulp.task('moveToOut', function (done) {
     gulp.src([
       'node_modules/angular2/bundles/js',
       'node_modules/angular2/bundles/angular2.*.js*',
@@ -68,4 +68,13 @@ gulp.task('moveToLibs', function (done) {
     gulp.src([
       'node_modules/bootstrap/dist/fonts/*.*'
     ]).pipe(gulp.dest('./wwwroot/libs/fonts'));
+
+    gulp.src([
+      'Build/**/*.js',
+      'Build/**/*.js.map'
+    ]).pipe(gulp.dest('./wwwroot/js/app/'));
+
+    gulp.src([
+      'Scripts/**/*.ts'
+    ]).pipe(gulp.dest('./wwwroot/js/Scripts/'));
 });

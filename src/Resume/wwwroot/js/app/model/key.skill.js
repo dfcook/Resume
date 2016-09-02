@@ -7,4 +7,4 @@ System.register([], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoia2V5LnNraWxsLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vU2NyaXB0cy9tb2RlbC9rZXkuc2tpbGwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9
+//# sourceMappingURL=key.skill.js.map

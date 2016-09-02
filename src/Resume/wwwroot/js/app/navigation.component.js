@@ -38,4 +38,4 @@ System.register(["angular2/core", "angular2/router"], function(exports_1, contex
         }
     }
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmF2aWdhdGlvbi5jb21wb25lbnQuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9TY3JpcHRzL25hdmlnYXRpb24uY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O1lBUUE7Z0JBQUE7Z0JBQ0EsQ0FBQztnQkFORDtvQkFBQyxnQkFBUyxDQUFDO3dCQUNQLFFBQVEsRUFBRSxZQUFZO3dCQUN0QixVQUFVLEVBQUUsQ0FBQywwQkFBaUIsQ0FBQzt3QkFDL0IsV0FBVyxFQUFFLDJCQUEyQjtxQkFDM0MsQ0FBQzs7dUNBQUE7Z0JBRUYsMEJBQUM7WUFBRCxDQUFDLEFBREQsSUFDQztZQURELHFEQUNDLENBQUEifQ==
+//# sourceMappingURL=navigation.component.js.map
