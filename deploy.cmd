@@ -103,7 +103,7 @@ IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
 
-  call :ExecuteCmd !NPM_CMD! run server:prod
+  call :ExecuteCmd !NPM_CMD! build:prod
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
