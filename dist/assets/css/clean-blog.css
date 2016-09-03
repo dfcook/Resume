@@ -3,15 +3,26 @@
  * Copyright 2014 Start Bootstrap
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
   color: #404040;
 }
 p {
   line-height: 1.5;
   margin: 30px 0;
+}
+.company-name {
+  font-style: italic;
+  text-transform: uppercase;
+}
+.job-title {
+  font-weight: bold;
+}
+.job-dates {
+  font-style: italic;
 }
 p a {
   text-decoration: underline;

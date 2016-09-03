@@ -8,12 +8,12 @@ export class ApplicantService {
             firstName: "Daniel",
             surname: "Cook",
             dateOfBirth: new Date(1975, 6, 15),
-            description: "A senior developer with 18 years in the industry including 15 years " +
-            " .NET development for both the desktop and the Web." +
-            " Produces high quality results with blistering speed, " +
-            " working from simple requirements to a polished end product." +
-            " Experience and self-motivated approach to learning can be " +
-            " applied to both development and consultancy."
+            description: "A senior developer with 19 years’ experience including 16 " + 
+            "years in .NET development for both the desktop and the Web. Familiar " +
+            "with both server and client-side paradigms including practical " + 
+            "experience in modern JavaScript frameworks. Experienced in object-oriented " +
+            "and functional design and patterns. Strong SQL skills including " + 
+            "query performance analysis."
         };
     }
 }

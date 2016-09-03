@@ -26,6 +26,8 @@ import { IndustryKnowledgeService } from "./services/industry.knowledge.service"
 import { KeySkillsService } from "./services/key.skills.service";
 import { ProfessionalExperienceService } from "./services/professional.experience.service";
 
+import { IsNullPipe } from "./pipes/isnull-pipe";
+
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
@@ -33,6 +35,7 @@ import { ProfessionalExperienceService } from "./services/professional.experienc
   bootstrap: [ App ],
   declarations: [
     App,
+    IsNullPipe,
     PersonalDetailsComponent,
     KeySkillsComponent,
     NavigationComponent,

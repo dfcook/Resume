@@ -6,76 +6,61 @@ export class ProfessionalExperienceService {
     getProfessionalExperience(): IProfessionalExperience[] {
         return [{
             company: "Axa Insurance",
-            startDate: new Date(1997, 8, 1),
-            endDate: new Date(1999, 7, 1),
+            startYear: 1997,
+            endYear: 1999,
             jobTitle: "Application Developer",
-            skills: "Visual Basic, Oracle, FileNet Imaging and Workflow",
+            location: "Lytham, Lancashire",
             description: "Development and support of an Imaging and Workflow application using Visual Basic, Oracle and FileNet components"
-        }, {
-                company: "Target Worldwide Express",
-                startDate: new Date(1999, 7, 1),
-                endDate: new Date(2000, 1, 15),
-                jobTitle: "Application Developer",
-                skills: "Visual Basic, SQL Server, XML, ASP",
-                description: "Developer of an Imaging and workflow application in Visual Basic " +
-                " to facilitate the tracking of Proof of Delivery (POD) information"
-            },
-            {
-                company: "Strategic Systems Solutions",
-                startDate: new Date(2000, 1, 16),
-                endDate: new Date(2004, 7, 15),
-                jobTitle: "Senior Analyst Programmer",
-                skills: "Visual Basic, C#, .NET, COM, Sybase, Unix, Java, JSP, Tomcat, SOAP, XML",
-                description: "Analysis, design, development and support of C# derivative pricing system (Windows Forms), using the full range of the .NET framework with specific emphasis on Remoting and multi-threading. \n    Development of Convertible Bond trading client using Visual Basic communicating using SOAP over IBM MQ. Redevelopment of an application framework to allow easy porting to the .NET platform"
-            }, {
-                company: "Strategic Systems Solutions",
-                startDate: new Date(2004, 7, 16),
-                endDate: new Date(2005, 4, 15),
-                jobTitle: "Technical Team Lead",
-                skills: "Java, JSP, Struts, Tiles, Spring Framework, log4j, Tomcat, Oracle",
-                description: "Technical architect and team lead on a small team developing a promotional tool set " +
-                " for a retail outlet. Complete analysis and design phase including production of prototype and " +
-                "sign-off documentation. Participation and leading in development phase, ensuring high code " +
-                "standards through peer review."
-            }, {
-                company: "Strategic Systems Solutions",
-                startDate: new Date(2004, 4, 16),
-                endDate: new Date(2005, 7, 15),
-                jobTitle: "Technical Team Lead",
-                skills: "C#, SQL Server, Microsoft Content Management Server, ASP.NET",
-                description: "Design and development of a content-driven intranet site for high-profile client using " +
-                "Microsoft Content Management Server."
-            }, {
-                company: "Strategic Systems Solutions",
-                startDate: new Date(2005, 7, 16),
-                endDate: new Date(2006, 7, 15),
-                jobTitle: "Technical Team Lead",
-                skills: "C#, Windows Forms, Oracle",
-                description: "Design and development of Windows applications for a leading Investment Bank. " +
-                "Involvement in the complete project lifecycle including requirements gathering, production of " +
-                "functional and technical specifications, leading a small team through the build process and " +
-                "system and user testing cycles."
-            }, {
-                company: "Cap Gemini / Strategic Systems Solutions",
-                startDate: new Date(2006, 7, 16),
-                endDate: new Date(2012, 5, 15),
-                jobTitle: "Technical Team Lead",
-                skills: "VisualBasic.NET, C#, .NET Remoting, Windows Forms, SQL Server",
-                description: "Design and development of Trade reconciliation (Front Office/Back Office) and adjustment solution for Global Product Control department. Key features of system:\n    \u2022\tRich client UI including multi-threaded operations ensuring smooth and responsive performance.\n    \u2022\tDistributed middle tier accessed using .NET remoting initially and then WCF after conversion process.\n    \u2022\tCustom data compression to improve performance of large queries over WAN.\n    \u2022\tUse of Web services to post adjustments to Trial Balance engine."
-            }, {
-                company: "Credit Suisse",
-                startDate: new Date(2012, 6, 16),
-                endDate: new Date(2015, 11, 15),
-                jobTitle: "Senior Developer",
-                skills: "C#, Windows Forms, WCF, ASP.NET MVC (including WebApi), Silverlight, Angular.js, SQL Server",
-                description: "Design and development of strategic adjustment solutions using Silverlight for rich client (requirement to bulk adjust up to 5000 items). " +
-                "Maintenance and Dashboard solutions developed in ASP.NET MVC. Log browser support tool developed in ASP.NET WebApi with HTML5 UI using Angular as client-side MVC framework written in TypeScript.\n    Strategic direction in the bank is to use HTML5 as UI for all new development therefore I have been heavily involved in providing prototypes of existing applications refactored to the new technology including mentoring others in the team on their use."
-            }, {
-                company: "Target Group",
-                startDate: new Date(2016, 0, 1),
-                jobTitle: "Senior Developer",
-                skills: "C# 6, .NET 4.5, Windows Services, ASP.NET MVC, Agile",
-                description: "Develop components to enable the enhancement of the Bluechip commercial software produce, used in Loan Brokers/Lenders nationwide. Including:\n        \u2022\tDevelopment of rules engine for identifying cases in arrears/requiring statements etc.\n        \u2022\tDevelopment of scheduler system, Windows service using Quartz.net to run the rules engine. Dashboard in ASP.NET MVC\n        \u2022\tIntegration components with 3rd party credit agencies.\n                        "
-            }];
+        },{
+            company: "Target Worldwide Express",
+            startYear: 1999,
+            endYear: 2000,
+            jobTitle: "Application Developer",
+            location: "Salford, Manchester",
+            description: "Developer of an Imaging and workflow application in Visual Basic to facilitate the tracking of Proof of Delivery (POD) information."
+        },{
+            company: "Strategic Systems Solutions",
+            startYear: 2000,
+            endYear: 2006,
+            jobTitle: "Developer / Consultant",
+            location: "Preston, Lancashire",
+            description: `Provide development/consultancy services to a wide range of clients in various industries including:
+•	Design and development of Windows applications for a leading Investment Bank. Involvement in the complete project lifecycle including requirements gathering, production of functional and technical specifications, leading a small team through the build process and system and user testing cycles
+•	Design and development of a content-driven intranet site for high-profile client using Microsoft Content Management Server
+•	Technical architect and team lead on a small team developing a promotional tool set for a retail outlet using Java/JSP/Struts. Complete analysis and design phase including production of prototype and sign-off documentation. Participation and leading in development phase, ensuring high code standards through peer review
+•	Analysis, design, development and support of C# derivative pricing system (Windows Forms), using the full range of the .NET framework with specific emphasis on Remoting and multi-threading. 
+•	Development of Convertible Bond trading client using Visual Basic communicating using SOAP over IBM MQ. Redevelopment of an application framework to allow easy porting to the .NET platform`
+        },{
+            company: "Cap Gemini / Strategic Systems Solutions",
+            startYear: 2006,
+            endYear: 2012,
+            jobTitle: "Senior Developer / Consultant",
+            location: "Preston, Lancashire",
+            description: `•	Design and development of Trade reconciliation (Front Office/Back Office) and adjustment solution for Global Product Control department. Key features of system:
+•	Rich client UI including multi-threaded operations ensuring smooth and responsive performance.
+•	Distributed middle tier accessed using .NET remoting initially and then WCF after conversion process.
+•	Custom data compression to improve performance of large queries over WAN.
+•	Use of Web services to post adjustments to Trial Balance engine.`
+        },{
+            company: "Independent Contractor for Credit Suisse",
+            startYear: 2012,
+            endYear: 2015,
+            jobTitle: "Senior Developer",
+            location: "Canary Wharf, London",
+            description: `•	Design and development of strategic adjustment solutions using Silverlight for rich client (requirement to bulk adjust up to 5000 items). 
+•	Maintenance and Dashboard solutions developed in ASP.NET MVC. 
+•	Log browser support tool developed in ASP.NET WebApi with HTML5 UI using Angular as client-side MVC framework written in TypeScript.
+•	Ongoing development support of Windows desktop application including users in EMEA, APAC and US
+•	Mentoring and team lead of offshore development teams.`
+        },{
+            company: "Independent Contractor for Target Group",
+            startYear: 2016,            
+            jobTitle: "Senior Developer",
+            location: "Chorley, Lancashire",
+            description: `•	Lead of small team in development of loans portal to allow applicants/introducers to apply for loan products. ASP.NET MVC/Web API/Knockout.js/Typescript
+•	Development of rules engine for identifying cases in arrears/requiring statements etc.
+•	Development of scheduler system, Windows service using Quartz.net to run the rules engine. Dashboard in ASP.NET MVC
+•	Integration components with 3rd party credit agencies.`
+        }];
     }
 }

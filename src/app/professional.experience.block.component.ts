@@ -13,11 +13,12 @@ import {IProfessionalExperience} from "./model/professional.experience";
         </div>
 
         <div [ngClass]="{ 'cd-timeline-content': true, 'is-hidden': hidden, 'bounce-in': bounceIn }">
-            <div>Company: {{item.company}}</div>
-            <div>{{item.jobTitle}}</div>
-            <div>Skills: {{item.skills}}</div>
+            <div class="company-name">{{item.company}}</div>
+            <div class="job-title">{{item.jobTitle}}</div>
+            <div class="job-location">{{item.location}}</div>
             <br />
-            <div class="description">{{item.description}}</div>            
+            <div class="description">{{item.description}}</div>
+            <span class="cd-date job-dates">{{item.startYear}} - {{item.endYear | isNull: "Current"}}</span>            
         </div>`
 })
 export class ProfessionalExperienceBlockComponent implements AfterViewInit {

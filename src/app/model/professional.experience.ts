@@ -1,8 +1,8 @@
 ﻿export interface IProfessionalExperience {
     company: string;
-    startDate: Date;
-    endDate?: Date;
+    startYear: number;
+    endYear?: number;
     jobTitle: string;
-    skills: string;
+    location: string;
     description: string;
 }
