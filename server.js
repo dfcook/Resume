@@ -2,13 +2,13 @@ var express = require('express');
 var app = express();
 
 app.get("/", function(req, res) {
-    res.sendfile("dist/index.html");
+    res.sendFile("dist/index.html");
  });
 
  /* serves all the static files */
  app.get(/^(.+)$/, function(req, res){ 
      console.log('static file request : ' + req.params);
-     res.sendfile( __dirname + "/dist/" + req.params[0]); 
+     res.sendFile( __dirname + "/dist/" + req.params[0]); 
  });
 
  var port = process.env.PORT || 5000;
