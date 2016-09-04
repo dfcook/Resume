@@ -5,7 +5,7 @@ import { IndustryKnowledge } from "./../model/industry.knowledge";
 export class IndustryKnowledgeService {
     getIndustryKnowledge(): string[] {
         return [
-            "Investment Banking – Convertible Bond pricing, trading and research systems.", 
+            "Investment Banking – Convertible Bond pricing, trading and research systems.",
             "Trading FOBO, reconciliation and exception workflow management.",
             "Retail",
             "Mail",

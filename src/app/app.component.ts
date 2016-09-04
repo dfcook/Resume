@@ -1,12 +1,12 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
-  selector: 'app',
+  selector: "app",
   encapsulation: ViewEncapsulation.None,
   styleUrls: [
-    './app.style.css'
+    "./app.style.css"
   ],
-  templateUrl: './../templates/resume.html'  
+  templateUrl: "./../templates/resume.html"
 })
-export class App {  
+export class App {
 }

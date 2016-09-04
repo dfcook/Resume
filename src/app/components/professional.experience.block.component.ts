@@ -1,6 +1,6 @@
-﻿import {Input, Component, ElementRef, HostListener, AfterViewInit} from "@angular/core";
-import {NgClass} from "@angular/common";
-import {IProfessionalExperience} from "./model/professional.experience";
+﻿import { Input, Component, ElementRef, HostListener, AfterViewInit } from "@angular/core";
+import { NgClass } from "@angular/common";
+import { IProfessionalExperience } from "./../model/professional.experience";
 
 @Component({
     selector: "[time-line-block]",
@@ -38,6 +38,13 @@ export class ProfessionalExperienceBlockComponent implements AfterViewInit {
         }
     };
 
+    ngAfterViewInit() {
+        const visible = this.shouldBeVisible();
+
+        this.hidden = !visible;
+        this.bounceIn = visible;
+    };
+
     private shouldBeVisible() {
         const windowOffset = window.pageYOffset + (window.innerHeight * 0.9);
         const offsetTop = this.getOffsetTop(this._el.nativeElement, 0);
@@ -51,11 +58,4 @@ export class ProfessionalExperienceBlockComponent implements AfterViewInit {
             return this.getOffsetTop(nativeElement.offsetParent, acc + nativeElement.offsetTop);
         }
     }
-
-    ngAfterViewInit() {
-        const visible = this.shouldBeVisible();
-
-        this.hidden = !visible;
-        this.bounceIn = visible;
-    };
 }

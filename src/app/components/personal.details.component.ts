@@ -1,10 +1,10 @@
-﻿import {Component, Inject, OnInit} from "@angular/core";
-import {ApplicantService} from "./services/applicant.service";
-import {IApplicant} from "./model/applicant";
+﻿import { Component, Inject, OnInit } from "@angular/core";
+import { ApplicantService } from "./../services/applicant.service";
+import { IApplicant } from "./../model/applicant";
 
 @Component({
     selector: "personal-details",
-    templateUrl: "./../templates/personal.details.html"
+    templateUrl: "./../../templates/personal.details.html"
 })
 export class PersonalDetailsComponent implements OnInit {
     public applicant: IApplicant;

@@ -1,13 +1,12 @@
-﻿import {Component, OnInit} from "@angular/core";
+﻿import { Component, OnInit } from "@angular/core";
 import { ProfessionalExperienceBlockComponent } from "./professional.experience.block.component";
-import {ProfessionalExperienceService} from "./services/professional.experience.service";
-import {IProfessionalExperience} from "./model/professional.experience";
-import {IsNullPipe} from "./pipes/isnull-pipe";
+import { ProfessionalExperienceService } from "./../services/professional.experience.service";
+import { IProfessionalExperience } from "./../model/professional.experience";
 
 @Component({
-    styleUrls: [ "./../assets/css/timeline.css" ],
+    styleUrls: [ "./../../assets/css/timeline.css" ],
     selector: "professional-experience",
-    templateUrl: "./../templates/professional.experience.html"
+    templateUrl: "./../../templates/professional.experience.html"
 })
 export class ProfessionalExperienceComponent implements OnInit {
     public experience: IProfessionalExperience[];

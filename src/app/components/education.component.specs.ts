@@ -1,5 +1,5 @@
 ﻿import { EducationComponent } from "./education.component";
-import { EducationService } from "./services/education.service";
+import { EducationService } from "./../services/education.service";
 
 describe("EducationComponent", () => {
     let component: EducationComponent;

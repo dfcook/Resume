@@ -11,14 +11,14 @@ export class ProfessionalExperienceService {
             jobTitle: "Application Developer",
             location: "Lytham, Lancashire",
             description: "Development and support of an Imaging and Workflow application using Visual Basic, Oracle and FileNet components"
-        },{
+        }, {
             company: "Target Worldwide Express",
             startYear: 1999,
             endYear: 2000,
             jobTitle: "Application Developer",
             location: "Salford, Manchester",
             description: "Developer of an Imaging and workflow application in Visual Basic to facilitate the tracking of Proof of Delivery (POD) information."
-        },{
+        }, {
             company: "Strategic Systems Solutions",
             startYear: 2000,
             endYear: 2006,
@@ -30,7 +30,7 @@ export class ProfessionalExperienceService {
 •	Technical architect and team lead on a small team developing a promotional tool set for a retail outlet using Java/JSP/Struts. Complete analysis and design phase including production of prototype and sign-off documentation. Participation and leading in development phase, ensuring high code standards through peer review
 •	Analysis, design, development and support of C# derivative pricing system (Windows Forms), using the full range of the .NET framework with specific emphasis on Remoting and multi-threading. 
 •	Development of Convertible Bond trading client using Visual Basic communicating using SOAP over IBM MQ. Redevelopment of an application framework to allow easy porting to the .NET platform`
-        },{
+        }, {
             company: "Cap Gemini / Strategic Systems Solutions",
             startYear: 2006,
             endYear: 2012,
@@ -41,7 +41,7 @@ export class ProfessionalExperienceService {
 •	Distributed middle tier accessed using .NET remoting initially and then WCF after conversion process.
 •	Custom data compression to improve performance of large queries over WAN.
 •	Use of Web services to post adjustments to Trial Balance engine.`
-        },{
+        }, {
             company: "Independent Contractor for Credit Suisse",
             startYear: 2012,
             endYear: 2015,
@@ -52,9 +52,9 @@ export class ProfessionalExperienceService {
 •	Log browser support tool developed in ASP.NET WebApi with HTML5 UI using Angular as client-side MVC framework written in TypeScript.
 •	Ongoing development support of Windows desktop application including users in EMEA, APAC and US
 •	Mentoring and team lead of offshore development teams.`
-        },{
+        }, {
             company: "Independent Contractor for Target Group",
-            startYear: 2016,            
+            startYear: 2016,
             jobTitle: "Senior Developer",
             location: "Chorley, Lancashire",
             description: `•	Lead of small team in development of loans portal to allow applicants/introducers to apply for loan products. ASP.NET MVC/Web API/Knockout.js/Typescript

@@ -1,11 +1,10 @@
 ﻿import { Component, Inject, OnInit } from "@angular/core";
-import { KeySkillsService } from "./services/key.skills.service";
-import { IndustryKnowledgeService } from "./services/industry.knowledge.service";
-import { IndustryKnowledge } from "./model/industry.knowledge";
+import { KeySkillsService } from "./../services/key.skills.service";
+import { IndustryKnowledgeService } from "./../services/industry.knowledge.service";
 
 @Component({
     selector: "key-skills",
-    templateUrl: "./../templates/key.skills.html"
+    templateUrl: "./../../templates/key.skills.html"
 })
 export class KeySkillsComponent implements OnInit {
     public keySkills: string[];
