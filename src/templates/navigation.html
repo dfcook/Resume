@@ -1,0 +1,28 @@
+﻿<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#cv-nav">
+                <span class="sr-only">Toggle navigation</span>
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" [routerLink]="['']">CV</a>
+        </div>    
+        <div class="collapse navbar-collapse" id="cv-nav">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a [routerLink]="['']">Summary</a>
+                </li>
+                <li>
+                    <a [routerLink]="['key_skills']">Key Skills &amp; Knowledge</a>
+                </li>
+                <li>
+                    <a [routerLink]="['professional_experience']">Professional Experience</a>
+                </li>
+                <li>
+                    <a [routerLink]="['education']">Education</a>
+                </li>
+            </ul>
+        </div>
+    </div>  
+</nav>
