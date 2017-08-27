@@ -1,8 +1,10 @@
 <template>
-  <div>
-    <h4>Summary</h4>
-    <div>{{ summary }}</div>
-  </div>
+  <v-layout row wrap>
+    <v-flex xs12>
+      <h4>Summary</h4>
+      <div>{{ summary }}</div>
+    </v-flex>      
+  </v-layout>
 </template>
 
 <script>

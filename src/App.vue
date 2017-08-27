@@ -1,19 +1,17 @@
 <template>
-  <div id="app">
+  <v-app light>    
     <resume-header />
 
-    <v-container fluid="fluid">
-      <v-row>
-        <v-col lg10 offset-lg1>
+    <v-container fluid="fluid">      
+      <v-layout row wrap>
+        <v-flex xs8 offset-xs2>
           <router-view></router-view>
-        </v-col>
-      </v-row>
-    </v-container>
+        </v-flex>
+      </v-layout>
 
-    <hr/>
-
-    <resume-footer />
-  </div>
+      <resume-footer />
+    </v-container>    
+  </v-app>
 </template>
 
 <script>

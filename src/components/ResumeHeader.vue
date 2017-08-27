@@ -1,21 +1,15 @@
-<template>
-    <header>
-      <v-container fluid="fluid">
-        <v-row>
-          <resume-navigation />
-        </v-row>
-        <v-row>
-          <v-col lg8 offset-lg2 md10 offset-md1>
-            <div class="site-heading">
-              <h2>Daniel Cook</h2>
-              <hr>
-              <p>Senior Developer</p>
-              <p>LLC: DOTA IT Services Ltd</p>
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
-    </header>
+<template>  
+  <header>
+    <v-parallax height="252" src='/static/home-bg.jpg'>
+      <resume-navigation />
+      <v-layout column align-center justify-center>
+        <h2 class="white-text">Daniel Cook</h2>
+        <hr>
+        <p>Senior Developer</p>
+        <p>LLC: DOTA IT Services Ltd</p>
+      </v-layout>      
+    </v-parallax>
+  </header>  
 </template>
 
 <script>
@@ -37,12 +31,7 @@
     margin-bottom: 5px;
     color: white;    
   }
-
-  .site-heading {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
+  
   hr {
     width: 100px;
     text-align: center;
@@ -68,7 +57,6 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
-     background-image: url('/static/home-bg.jpg');
+    -o-background-size: cover;     
   }
 </style>

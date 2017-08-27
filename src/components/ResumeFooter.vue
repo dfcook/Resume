@@ -1,39 +1,33 @@
-<template>
-  <footer>
-    <v-container fluid="fluid">
-      <v-row>
-        <v-col lg8 offset-lg2 md10 offset-md1>
-          <ul>
-            <li>
-              <a href="mailto: dota_it@hotmail.co.uk">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://uk.linkedin.com/in/daniel-cook-938529110">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/dfcook">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright text-muted">Copyright © DOTA IT Services Ltd 201</p>
-        </v-col>
-      </v-row>
-    </v-container>
-  </footer>
+<template>  
+    <v-footer fixed>
+      <v-spacer></v-spacer>        
+        <ul>
+          <li>
+            <a href="mailto: dota_it@hotmail.co.uk">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://uk.linkedin.com/in/daniel-cook-938529110">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/dfcook">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>        
+    </v-footer>            
 </template>
 
 <style scoped>

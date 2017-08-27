@@ -1,36 +1,17 @@
 <template>
   <v-toolbar class="transparent elevation-0">    
     <v-spacer></v-spacer>
-    <v-toolbar-items>
-      <v-toolbar-item>
-        <router-link to="/">Summary</router-link>
-      </v-toolbar-item>
-      <v-toolbar-item>
-        <router-link to="/KeySkills">Key Skills &amp; Knowledge</router-link>
-      </v-toolbar-item>
-      <v-toolbar-item>
-        <router-link to="/ProfessionalExperience">Professional Experience</router-link>
-      </v-toolbar-item>
-      <v-toolbar-item>
-        <router-link to="/Education">Education</router-link>
-      </v-toolbar-item>
+    <v-toolbar-items>      
+      <v-btn flat to="/">Summary</v-btn>            
+      <v-btn flat to="/KeySkills">Key Skills &amp; Knowledge</v-btn>            
+      <v-btn flat to="/ProfessionalExperience">Professional Experience</v-btn>            
+      <v-btn flat to="/Education">Education</v-btn>      
     </v-toolbar-items>
   </v-toolbar>
 </template>
 
 <style scoped>
-  li {
-    text-transform: uppercase;
-    font-size: 0.9em;
-    font-weight: bold;
-  }
-
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  a:visited {
+  .toolbar a.btn {
     color: white;
   }
 </style>

@@ -1,26 +1,33 @@
 <template>
-  <div>
+  <v-layout fill-height>
+    <v-flex xs12>
     <h4>Professional Experience</h4>
     <section id="cd-timeline" class="cd-container">
-    <div v-for="exp in professionalExperience" class="cd-timeline-block">
+    <div v-for="exp in professionalExperience" :key="exp.id" class="cd-timeline-block">
         <div class="cd-timeline-img">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-            </span>
+          <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
+          </span>
         </div>
 
-        <div class="cd-timeline-content">
-            <div class="company-name">Company: {{exp.company}}</div>
-            <div class="job-title">{{exp.jobTitle}}</div>
-            <div>Skills: {{exp.skills}}</div>
-            <br />
-            <div class="description">{{exp.description}}</div>
-            <span class="cd-date job-dates">{{exp.startDate}} - {{exp.endDate}}</span>
-        </div>
+        <v-card class="cd-timeline-content">
+          <v-card-title>
+            <div>
+            <span class="company-name">Company: {{exp.company}}</span><br>
+            <span class="job-title">{{exp.jobTitle}}</span><br>
+            <span>Skills: {{exp.skills}}</span>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <div class="description">{{exp.description}}</div>            
+          </v-card-text>
+          <span class="cd-date job-dates">{{exp.startDate}} - {{exp.endDate}}</span>
+        </v-card>                
     </div>
 </section>
-  </div>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
