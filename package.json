@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
     "vue": "^2.2.2",
     "vue-router": "^2.3.0",
     "vuetify": "^0.15.0-beta.2",
@@ -70,6 +72,9 @@
     "shelljs": "^0.7.6",
     "sinon": "^3.2.1",
     "sinon-chai": "^2.8.0",
+    "style-loader": "^0.18.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.1",
@@ -88,5 +93,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "false": {}
 }

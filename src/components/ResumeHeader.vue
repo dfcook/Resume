@@ -1,6 +1,6 @@
 <template>  
   <header>
-    <v-parallax height="252" src='/static/home-bg.jpg'>
+    <v-parallax height="252" src="/static/home-bg.jpg" alt="header">
       <resume-navigation />
       <v-layout column align-center justify-center>
         <h2 class="white-text">Daniel Cook</h2>

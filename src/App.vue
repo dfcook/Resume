@@ -24,8 +24,10 @@
   }
 </script>
 
-<style scoped>
-  hr {
+<style lang="stylus">
+  @import './styles/resume'
+
+  hr
     margin-top: 20px;
     margin-bottom: 20px;
     border: 0;
@@ -33,6 +35,5 @@
     height: 0;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    box-sizing: content-box;
-  }
+    box-sizing: content-box;  
 </style>

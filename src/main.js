@@ -5,8 +5,6 @@ import Vuetify from 'vuetify'
 import { store, Actions } from './vuex/store'
 import getResume from './api/resources'
 
-import('./../node_modules/vuetify/dist/vuetify.min.css')
-
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false

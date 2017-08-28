@@ -1,33 +1,17 @@
-<template>  
-    <v-footer fixed>
-      <v-spacer></v-spacer>        
-        <ul>
-          <li>
-            <a href="mailto: dota_it@hotmail.co.uk">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://uk.linkedin.com/in/daniel-cook-938529110">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/dfcook">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>        
-    </v-footer>            
+<template>
+  <v-footer fixed>
+    <v-bottom-nav value="true" class="white">
+      <v-btn href="mailto: dota_it@hotmail.co.uk" flat light class="teal--text">
+        <v-icon>fa-envelope</v-icon>
+      </v-btn>
+      <v-btn href="https://uk.linkedin.com/in/daniel-cook-938529110" flat light class="teal--text">
+        <v-icon>fa-linkedin</v-icon>
+      </v-btn>
+      <v-btn href="https://github.com/dfcook" flat light class="teal--text">
+        <v-icon>fa-github</v-icon>
+      </v-btn>        
+    </v-bottom-nav>
+  </v-footer>              
 </template>
 
 <style scoped>
