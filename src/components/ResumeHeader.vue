@@ -18,7 +18,6 @@
   export default {
     components: { ResumeNavigation }
   }
-
 </script>
 
 <style scoped>

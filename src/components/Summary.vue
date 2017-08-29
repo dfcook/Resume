@@ -2,7 +2,7 @@
   <v-layout row wrap>
     <v-flex xs12>
       <h4>Summary</h4>
-      <div>{{ summary }}</div>
+      <div id="summary">{{ summary }}</div>
     </v-flex>      
   </v-layout>
 </template>
