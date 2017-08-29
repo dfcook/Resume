@@ -10,8 +10,7 @@
   </v-toolbar>
 </template>
 
-<style scoped>
-  .toolbar a.btn {
-    color: white;
-  }
+<style scoped lang="stylus">
+  .application--light .toolbar a.btn
+    color: white
 </style>
