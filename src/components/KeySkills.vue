@@ -7,7 +7,7 @@
           <v-card height="100%">
             <v-card-title>
               <h5>
-                <em>Skills</em>
+                <em>Foo Skills</em>
               </h5>
               <br>              
             </v-card-title>
