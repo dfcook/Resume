@@ -1,8 +1,8 @@
 <template>
-  <v-app light>    
+  <v-app light>
     <resume-header />
 
-    <v-container fluid="fluid">      
+    <v-container fluid>
       <v-layout row wrap>
         <v-flex xs8 offset-xs2>
           <router-view></router-view>
@@ -10,7 +10,7 @@
       </v-layout>
 
       <resume-footer />
-    </v-container>    
+    </v-container>
   </v-app>
 </template>
 
@@ -35,5 +35,5 @@
     height: 0;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
-    box-sizing: content-box;  
+    box-sizing: content-box;
 </style>
