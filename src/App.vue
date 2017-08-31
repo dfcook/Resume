@@ -3,7 +3,7 @@
     <resume-header />
 
     <v-container fluid>
-      <v-layout row wrap>
+      <v-layout row-xs column child-flex-xs>
         <v-flex xs8 offset-xs2>
           <router-view></router-view>
         </v-flex>

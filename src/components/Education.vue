@@ -1,12 +1,10 @@
 <template>
-  <v-layout fill-height>
-    <v-flex xs12>
-      <h4>Education</h4>
-      <ul>
-        <li v-for="education in educationHistory" :key="education.id">{{ education.qualifications }} from {{ education.establishment }}</li>
-      </ul>
-    </v-flex>
-  </v-layout>
+  <div>
+    <h4>Education</h4>
+    <ul>
+      <li v-for="education in educationHistory" :key="education.id">{{ education.qualifications }} from {{ education.establishment }}</li>
+    </ul>
+  </div>
 </template>
 
 <script>
