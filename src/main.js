@@ -18,7 +18,12 @@ new Vue({
   store,
   created () {
     getResume().then(r => {
-      store.dispatch(Actions.loadSummary, r.data.summary)
+      store.dispatch(Actions.loadSummary, {
+        summary: r.data.summary,
+        firstName: r.data.firstName,
+        lastName: r.data.lastName,
+        companyName: r.data.companyName
+      })
       store.dispatch(Actions.loadKeySkills, r.data.keySkills)
       store.dispatch(Actions.loadIndustryKnowledge, r.data.industryKnowledge)
       store.dispatch(Actions.loadEducationHistory, r.data.educationHistory)

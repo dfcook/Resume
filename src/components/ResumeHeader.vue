@@ -1,22 +1,26 @@
-<template>  
+<template>
   <header>
     <v-parallax height="252" src="/static/home-bg.jpg" alt="header">
       <resume-navigation />
       <v-layout column align-center justify-center>
-        <h2 class="white-text">Daniel Cook</h2>
+        <h2 class="white-text">{{ summary.firstName }} {{ summary.lastName }}</h2>
         <hr>
-        <p>Senior Developer</p>
-        <p>LLC: DOTA IT Services Ltd</p>
-      </v-layout>      
+        <p v-if="summary.role">{{ summary.role }}</p>
+        <p v-if="summary.companyName">LLC: {{ summary.companyName }}</p>
+      </v-layout>
     </v-parallax>
-  </header>  
+  </header>
 </template>
 
 <script>
   import ResumeNavigation from '@/components/ResumeNavigation'
+  import { mapState } from 'vuex'
 
   export default {
-    components: { ResumeNavigation }
+    components: { ResumeNavigation },
+    computed: {
+      ...mapState(['summary'])
+    }
   }
 </script>
 
@@ -28,9 +32,9 @@
   p {
     margin-top: 5px;
     margin-bottom: 5px;
-    color: white;    
+    color: white;
   }
-  
+
   hr {
     width: 100px;
     text-align: center;
@@ -56,6 +60,6 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;     
+    -o-background-size: cover;
   }
 </style>

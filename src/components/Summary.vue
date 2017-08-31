@@ -2,8 +2,8 @@
   <v-layout row wrap>
     <v-flex xs12>
       <h4>Summary</h4>
-      <div id="summary">{{ summary }}</div>
-    </v-flex>      
+      <div class="summary">{{ summary.summary }}</div>
+    </v-flex>
   </v-layout>
 </template>
 

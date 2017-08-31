@@ -1,20 +1,14 @@
 import Vue from 'vue'
 import Summary from '@/components/Summary'
 import Vuetify from 'vuetify'
+import { mount } from 'avoriaz'
+import { store } from './../mocks'
 
 Vue.use(Vuetify)
 
-describe('Hello.vue', () => {
-  it('should render correct contents', () => {
-    const store = {
-      state: {
-        summary: 'foo'
-      }
-    }
-
-    const Constructor = Vue.extend(Summary)
-    const vm = new Constructor({ store }).$mount()
-    expect(vm.$el.querySelector('.row .xs12 div').textContent)
-      .to.equal('foo')
+describe('Summary.vue', () => {
+  it('should render summary from store', () => {
+    const vm = mount(Summary, { store })
+    expect(vm.find('.summary')[0].text()).to.equal(store.state.summary.summary)
   })
 })
