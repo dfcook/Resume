@@ -1,39 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { actions } from './actions'
+import { mutations } from './mutations'
 
 Vue.use(Vuex)
 
-class Actions {
-  static get loadSummary () { return 'loadSummary' }
-  static get loadKeySkills () { return 'loadKeySkills' }
-  static get loadIndustryKnowledge () { return 'loadIndustryKnowledge' }
-  static get loadEducationHistory () { return 'loadEducationHistory' }
-  static get loadProfessionalExperience () { return 'loadProfessionalExperience' }
-}
-
-class Mutations {
-  static get loadSummary () { return 'loadSummary' }
-  static get loadKeySkills () { return 'loadKeySkills' }
-  static get loadIndustryKnowledge () { return 'loadIndustryKnowledge' }
-  static get loadEducationHistory () { return 'loadEducationHistory' }
-  static get loadProfessionalExperience () { return 'loadProfessionalExperience' }
-}
-
-const store = new Vuex.Store({
-  actions: {
-    [Actions.loadSummary] ({ commit }, summary) { commit(Mutations.loadSummary, summary) },
-    [Actions.loadKeySkills] ({ commit }, keySkills) { commit(Mutations.loadKeySkills, keySkills) },
-    [Actions.loadIndustryKnowledge] ({ commit }, industryKnowledge) { commit(Mutations.loadIndustryKnowledge, industryKnowledge) },
-    [Actions.loadEducationHistory] ({ commit }, educationHistory) { commit(Mutations.loadEducationHistory, educationHistory) },
-    [Actions.loadProfessionalExperience] ({ commit }, professionalExperience) { commit(Mutations.loadProfessionalExperience, professionalExperience) }
-  },
-  mutations: {
-    [Mutations.loadSummary] (state, summary) { state.summary = summary },
-    [Mutations.loadKeySkills] (state, keySkills) { state.keySkills = keySkills },
-    [Mutations.loadIndustryKnowledge] (state, industryKnowledge) { state.industryKnowledge = industryKnowledge },
-    [Mutations.loadEducationHistory] (state, educationHistory) { state.educationHistory = educationHistory },
-    [Mutations.loadProfessionalExperience] (state, professionalExperience) { state.professionalExperience = professionalExperience }
-  },
+export default new Vuex.Store({
+  actions,
+  mutations,
   state: {
     summary: '',
     keySkills: [],
@@ -113,8 +87,3 @@ const store = new Vuex.Store({
     educationHistory: []
   }
 })
-
-export {
-  store,
-  Actions
-}

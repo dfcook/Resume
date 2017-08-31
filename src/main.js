@@ -2,7 +2,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Vuetify from 'vuetify'
-import { store, Actions } from './vuex/store'
+import store from './vuex/store'
+import { Actions } from './vuex/actions'
 import getResume from './api/resources'
 
 Vue.use(Vuetify)
