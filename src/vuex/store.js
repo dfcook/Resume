@@ -11,6 +11,7 @@ export default new Vuex.Store({
   state: {
     summary: '',
     keySkills: [],
+    links: [],
     industryKnowledge: [],
     professionalExperience: [{
       company: 'Axa Insurance',

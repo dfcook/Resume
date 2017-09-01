@@ -23,11 +23,13 @@ new Vue({
         summary: r.data.summary,
         firstName: r.data.firstName,
         lastName: r.data.lastName,
-        companyName: r.data.companyName
+        companyName: r.data.companyName,
+        role: r.data.role
       })
       store.dispatch(Actions.loadKeySkills, r.data.keySkills)
       store.dispatch(Actions.loadIndustryKnowledge, r.data.industryKnowledge)
       store.dispatch(Actions.loadEducationHistory, r.data.educationHistory)
+      store.dispatch(Actions.loadLinks, r.data.links)
       // store.dispatch(Actions.loadProfessionalExperience, r.data.professionalExperience)
     })
   }

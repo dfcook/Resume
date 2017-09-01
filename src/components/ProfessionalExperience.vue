@@ -1,8 +1,8 @@
 <template>
-  <v-layout fill-height>
+  <v-layout row-xs column child-flex-xs>
     <v-flex xs12>
       <h4>Professional Experience</h4>
-      <section id="cd-timeline" class="cd-container">  
+      <section id="cd-timeline" class="cd-container">
         <professional-experience-item v-for="exp in orderedExperience" :exp="exp" :key="exp.id"></professional-experience-item>
       </section>
     </v-flex>
@@ -27,7 +27,7 @@
   }
 </script>
 
-<style scoped>  
+<style scoped>
   h4 {
     font-size: 1.9em;
     font-weight: bold;

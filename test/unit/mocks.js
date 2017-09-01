@@ -7,6 +7,10 @@ const store = {
       firstName: 'Daniel',
       companyName: 'DOTA IT Services'
     },
+    links: [ {
+      url: 'foo',
+      icon: 'bar'
+    } ],
     educationHistory: [ {
       establishment: 'Foobar Grammar School',
       qualifications: '2 Jelly Babies'
