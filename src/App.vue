@@ -18,8 +18,7 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
-import ResumeFooter from '@/components/ResumeFooter'
-import ResumeHeader from '@/components/ResumeHeader'
+import { ResumeFooter, ResumeHeader } from '@/components'
 
 @Component({
   name: 'app',
