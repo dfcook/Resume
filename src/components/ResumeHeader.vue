@@ -12,16 +12,23 @@
   </header>
 </template>
 
-<script>
-  import ResumeNavigation from '@/components/ResumeNavigation'
-  import { mapState } from 'vuex'
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { State } from 'vuex-class'
 
-  export default {
-    components: { ResumeNavigation },
-    computed: {
-      ...mapState(['summary'])
-    }
+import ResumeSummary from './../model/ResumeSummary'
+import ResumeNavigation from '@/components/ResumeNavigation'
+
+@Component({
+  name: 'resume-footer',
+  components: {
+    ResumeNavigation
   }
+})
+export default class ResumeHeader extends Vue {
+  @State('summary') summary: ResumeSummary
+}
 </script>
 
 <style scoped>

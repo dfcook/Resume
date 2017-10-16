@@ -7,14 +7,19 @@
   </div>
 </template>
 
-<script>
-  import { mapState } from 'vuex'
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { State } from 'vuex-class'
 
-  export default {
-    computed: {
-      ...mapState(['educationHistory'])
-    }
-  }
+import EducationItem from './../model/EducationItem'
+
+@Component({
+  name: 'education'
+})
+export default class Education extends Vue {
+  @State('educationHistory') educationHistory: EducationItem[]
+}
 </script>
 
 <style scoped>

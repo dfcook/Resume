@@ -14,14 +14,22 @@
   </v-app>
 </template>
 
-<script>
-  import ResumeFooter from '@/components/ResumeFooter'
-  import ResumeHeader from '@/components/ResumeHeader'
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
-  export default {
-    name: 'app',
-    components: { ResumeFooter, ResumeHeader }
+import ResumeFooter from '@/components/ResumeFooter'
+import ResumeHeader from '@/components/ResumeHeader'
+
+@Component({
+  name: 'app',
+  components: {
+    ResumeFooter,
+    ResumeHeader
   }
+})
+export default class App extends Vue {
+}
 </script>
 
 <style lang="stylus">

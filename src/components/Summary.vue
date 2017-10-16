@@ -5,14 +5,19 @@
   </div>
 </template>
 
-<script>
-  import { mapState } from 'vuex'
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { State } from 'vuex-class'
 
-  export default {
-    computed: {
-      ...mapState(['summary'])
-    }
-  }
+import ResumeSummary from './../model/ResumeSummary'
+
+@Component({
+  name: 'summary'
+})
+export default class Summary extends Vue {
+  @State('summary') summary: ResumeSummary
+}
 </script>
 
 <style scoped>

@@ -9,22 +9,29 @@
   </v-layout>
 </template>
 
-<script>
-  import { mapState } from 'vuex'
-  import _ from 'lodash'
-  import ProfessionalExperienceItem from './ProfessionalExperienceItem.vue'
+<script lang="ts">
+import { orderBy } from 'lodash'
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { State } from 'vuex-class'
 
-  export default {
-    components: {
-      ProfessionalExperienceItem
-    },
-    computed: {
-      ...mapState(['professionalExperience']),
-      orderedExperience () {
-        return _.orderBy(this.professionalExperience, ['startDate'], ['desc'])
-      }
-    }
+import ProfessionalExperienceItem from '@/components/ProfessionalExperienceItem'
+
+import ExperienceItem from './../model/ExperienceItem'
+
+@Component({
+  name: 'professional-experience',
+  components: {
+    ProfessionalExperienceItem
   }
+})
+export default class ProfessionalExperience extends Vue {
+  @State('professionalExperience') professionalExperience: ExperienceItem[]
+
+  get orderedExperience () {
+    return orderBy(this.professionalExperience, ['startDate'], ['desc'])
+  }
+}
 </script>
 
 <style scoped>

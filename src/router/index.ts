@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Summary from '@/components/Summary'
-import KeySkills from '@/components/KeySkills'
+
 import Education from '@/components/Education'
+import KeySkills from '@/components/KeySkills'
 import ProfessionalExperience from '@/components/ProfessionalExperience'
+import Summary from '@/components/Summary'
 
 Vue.use(Router)
 
@@ -11,21 +12,21 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      component: Summary,
       name: 'Summary',
-      component: Summary
+      path: '/',
     }, {
-      path: '/KeySkills',
+      component: KeySkills,
       name: 'KeySkills',
-      component: KeySkills
+      path: '/KeySkills',
     }, {
-      path: '/Education',
+      component: Education,
       name: 'Education',
-      component: Education
+      path: '/Education',
     }, {
-      path: '/ProfessionalExperience',
+      component: ProfessionalExperience,
       name: 'ProfessionalExperience',
-      component: ProfessionalExperience
-    }
-  ]
+      path: '/ProfessionalExperience',
+    },
+  ],
 })

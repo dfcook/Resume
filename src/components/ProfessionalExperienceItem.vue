@@ -23,19 +23,26 @@
   </div>
 </template>
 
-<script>
-  import moment from 'moment'
+<script lang="ts">
+import * as moment from 'moment'
+import Vue from 'vue'
+import Component from 'vue-class-component'
 
-  export default {
-    props: [ 'exp' ],
-    methods: {
-      formatDate (date) {
-        if (!date) {
-          return 'Current'
-        }
+import ExperienceItem from './../model/ExperienceItem'
 
-        return moment(date).format('MMMM YYYY')
-      }
+@Component({
+  name: 'professional-experience-item',
+  props: [ 'exp' ]
+})
+export default class ProfessionalExperienceItem extends Vue {
+  exp: ExperienceItem
+
+  formatDate (date: Date) {
+    if (!date) {
+      return 'Current'
     }
+
+    return moment(date).format('MMMM YYYY')
   }
+}
 </script>

@@ -37,14 +37,21 @@
   </div>
 </template>
 
-<script>
-  import { mapState } from 'vuex'
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { State } from 'vuex-class'
 
-  export default {
-    computed: {
-      ...mapState(['keySkills', 'industryKnowledge'])
-    }
-  }
+import KeySkill from './../model/KeySkill'
+import IndustryKnowledge from './../model/IndustryKnowledge'
+
+@Component({
+  name: 'key-skills'
+})
+export default class KeySkills extends Vue {
+  @State('industryKnowledge') industryKnowledge: IndustryKnowledge[]
+  @State('keySkills') keySkills: KeySkill[]
+}
 </script>
 
 <style scoped>

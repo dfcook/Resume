@@ -6,12 +6,17 @@
   </v-bottom-nav>
 </template>
 
-<script>
-  import { mapState } from 'vuex'
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import { State } from 'vuex-class'
 
-  export default {
-    computed: {
-      ...mapState(['links'])
-    }
-  }
+import Link from './../model/Link'
+
+@Component({
+  name: 'resume-footer'
+})
+export default class ResumeFooter extends Vue {
+  @State('links') links: Link[]
+}
 </script>

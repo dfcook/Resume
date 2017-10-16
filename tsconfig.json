@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "outDir": "./build/",
+      "sourceMap": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "strictNullChecks": false,
+      "module": "es2015",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      "rootDir": "."
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

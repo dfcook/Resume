@@ -1,0 +1,11 @@
+{
+  "extends": ["tslint:latest"],
+  "rules": {
+    // override tslint-react rules here
+    "jsx-wrap-multiline": false,
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single", "jsx-double"],
+    "interface-name": [true, "never-prefix"],
+    "no-submodule-imports": [false, "always"]
+  }
+}
