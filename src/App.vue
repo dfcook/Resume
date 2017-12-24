@@ -4,7 +4,7 @@
 
     <v-container fluid>
       <v-layout row-xs column child-flex-xs>
-        <v-flex xs8 offset-xs2>
+        <v-flex xs12 sm10 offset-sm1 md8 offset-md2>
           <router-view></router-view>
         </v-flex>
       </v-layout>
@@ -18,7 +18,7 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 
-import { ResumeFooter, ResumeHeader } from '@/components'
+import { ResumeFooter, ResumeHeader } from '@components'
 
 @Component({
   name: 'app',

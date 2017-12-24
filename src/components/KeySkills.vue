@@ -2,7 +2,7 @@
   <div>
     <h4>Key Skills &amp; Knowledge</h4>
     <v-layout row>
-      <v-flex xs6>
+      <v-flex xs6 class="mx-1">
         <v-card height="100%">
           <v-card-title>
             <h5>
@@ -18,7 +18,7 @@
         </v-card>
       </v-flex>
 
-      <v-flex xs6>
+      <v-flex xs6 class="mx-1">
         <v-card height="100%" >
           <v-card-title>
             <h5>

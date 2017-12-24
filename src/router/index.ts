@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import { Education, KeySkills, ProfessionalExperience, Summary } from '@/components'
+import { Education, KeySkills, ProfessionalExperience, Summary } from '@components'
 
 Vue.use(Router)
 

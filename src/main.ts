@@ -9,7 +9,11 @@ import store from './vuex/store'
 
 import getResume from './api/resources'
 
-Vue.use(Vuetify)
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#fff',
+  },
+})
 
 Vue.config.productionTip = false
 
